@@ -48,4 +48,14 @@ class User extends CredentialsUser
         $this->deleteEvents();
         $this->deleteComments();
     }
+
+    /**
+     * Social Data
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function social()
+    {
+        return $this->hasOne('GrahamCampbell\BootstrapCMS\Models\SocialUser');
+    }
 }

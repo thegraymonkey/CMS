@@ -17,7 +17,7 @@ class CreateSocialUsersTable extends Migration {
 			$table->increments('id');
 			$table->integer('user_id')->index()->unsigned();
 			$table->enum('provider', ['facebook', 'google', 'twitter']);
-			$table->bigInteger('provider_id')->unsigned();
+			$table->string('provider_id', 32);
 			$table->string('avatar');
 			$table->timestamps();
 		});
