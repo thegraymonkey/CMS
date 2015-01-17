@@ -22,7 +22,7 @@ return [
     |
     */
 
-    'debug' => false,
+    'debug' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -87,7 +87,7 @@ return [
     |
     */
 
-    'key' => 'YourSecretKey!!!',
+    'key' => 'ksBMNbr3tJl5IGflmuOgpP5oAX9J3awj',
 
     'cipher' => MCRYPT_RIJNDAEL_128,
 
@@ -150,6 +150,8 @@ return [
         'Illuminate\Translation\TranslationServiceProvider',
         'Illuminate\Validation\ValidationServiceProvider',
         'Illuminate\View\ViewServiceProvider',
+        'Laravel\Socialite\SocialiteServiceProvider',
+
 
         /*
          * Package Service Providers...
@@ -240,7 +242,7 @@ return [
         'Validator'   => 'Illuminate\Support\Facades\Validator',
         'View'        => 'Illuminate\Support\Facades\View',
         'Asset'       => 'Lightgear\Asset\Facades\Asset',
-
+        'Socialite'   => 'Laravel\Socialite\Facades\Socialite',
     ],
 
 ];

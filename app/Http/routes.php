@@ -54,3 +54,9 @@ if (Config::get('cms.events')) {
 
 // caching routes
 $router->get('caching', ['as' => 'caching.index', 'uses' => 'CachingController@getIndex']);
+
+//social login and register
+$router->get('account/social-login/{provider}', 'SocialController@login');
+
+$router->get('account/callback/{provider}', 'SocialController@callback');
+

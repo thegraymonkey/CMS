@@ -49,7 +49,9 @@
         "mccool/laravel-auto-presenter": "~3.0",
         "fideloper/proxy": "2.1.1",
         "barryvdh/laravel-debugbar": "1.8.4",
-        "maximebf/debugbar": "1.10.2"
+        "maximebf/debugbar": "1.10.2",
+        "laravel/socialite": "dev-master"
+        
     },
     "require-dev": {
         "graham-campbell/testbench": "~2.0",
