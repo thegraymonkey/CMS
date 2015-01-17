@@ -57,6 +57,5 @@ $router->get('caching', ['as' => 'caching.index', 'uses' => 'CachingController@g
 
 //social login and register
 $router->get('account/social-login/{provider}', 'SocialController@login');
-
+$router->post('account/social-register', 'SocialController@register');
 $router->get('account/callback/{provider}', 'SocialController@callback');
-
